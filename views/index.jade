@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title SearchVidz
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/jquery.fancybox.min.css')
+    // <link rel="stylesheet" href="./public/stylesheets/fancybox.css">
+    // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    meta(name='viewport', content='width=device-width')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='/javascripts/script.js')
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    script(src='/javascripts/jquery.fancybox.min.js')
+  body
+    #container
+      header
+        h1
+          | Search
+          span Vidz
+        p Search all Youtube Videos
+      section
+        form#search-form(name='searchForm', onsubmit='return search()')
+          #fieldcontainer
+            input#query.search-field(type='search', placeholder='Search Youtube...')
+            input#search-btn(type='submit', name='search-btn', value='')
+      #results
+      #buttons
+      footer
+        p Copyright © 2014, All Rights Reserved!
